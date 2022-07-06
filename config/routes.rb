@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  get "/params" => "params#query"
+  get "/query" => "params#query"
   get "/index" => "params#index"
+  get "/question" => "params#question"
 end

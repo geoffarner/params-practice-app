@@ -7,4 +7,10 @@ class ParamsController < ApplicationController
     params = Param.all
     render json: params.as_json
   end
+
+  def question
+    if params == "/?q="
+      render (params.upcase).as_json
+    end
+  end
 end
